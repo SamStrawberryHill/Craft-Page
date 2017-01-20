@@ -32,6 +32,9 @@ h4 {
 a:hover {
   text-decoration: none;
 }
+.wrapper {
+  background: url('../img/edit2.jpg');
+}
 
 /**************** Navigation *************/
 
@@ -71,7 +74,8 @@ a.navbar-brand:focus{
   padding-right: 0px;
 }
 
-.container-fluid .portfolio {
+.container-fluid .craftSection,
+.container-fluid .recipeSection{
   overflow: visible;
   width: 100%;
   position: relative;
@@ -145,7 +149,7 @@ span.icon-bar {
 
 /******************** About Me ***************/
 .section.section-header.aboutMe {
-  background: url('../img/edit2.jpg');
+  /*background: url('../img/edit2.jpg');*/
 }
 .section {
   position: relative;
@@ -189,14 +193,15 @@ img.portrait {
 }
 
 
-/***************  Work Section **********************/
-.portfolio {
+/***************  Recipe Section **********************/
+.recipeSection {
   width: 100%;
-  background: url('../img/edit2.jpg');
+  /*background: url('../img/edit2.jpg');*/
   border-top: 2px solid #abddff;
+  margin-bottom: 15px;
 }
 
-a.work {
+a.recipes {
   margin-top: 10px;
   font-size: 60px;
   font-family: 'Pacifico', cursive;
@@ -205,7 +210,7 @@ a.work {
   text-align: center;
   }
 
-a.work:hover {
+a.recipes:hover {
   text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
   text-decoration: none;
   -webkit-transition: 500ms linear 0s;
@@ -215,79 +220,91 @@ a.work:hover {
   outline: 0 none;
 }
 
-/**********************  Portfolio Image Styles **********************/
-.projectName {
-  font-size: 20px;
-  background-color: rgba(109,123,255, 0.5);
+/********************** Blog Style **********************/
+.card {
+  background: url('../img/rainbowbackground.jpg');
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
   border-radius: 3px;
-  width: 60%;
-  margin-left: auto;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+
+}
+.firstCard {
+  margin-top: 30px;
+}
+.cardPhoto {
+  width: 244.8px;
+  height: 326.4px;
+  border-radius: 4px;
+  margin: 36.8px 10px 36.8px 10px;
+  opacity: 1;
+}
+.cardPhoto:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=50)
+}
+
+.infoSection {
+  background-color: rgba(109,123,255, 0.7);
+  border-radius: 3px;
+  margin-top: 36.8px;
+  margin-right: -20px;
+  margin-bottom: 15px;
+  width: 550px;
+}
+
+.recipeTitle{
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  color: #3effa7;
+  text-align: center;
+}
+#myBtn {
   margin-right: auto;
+  margin-left: auto;
 }
+#myBtn:hover,
+#myBtn:focus,
+#myBtn:visited {
+  color: #ff3e96;
+  border-color: #ff3e96;
+  box-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px #ff0080, 0 0 3px #ff0080, 0 0 4px #ff0080, 0 0 5px #ff0080, 0 0 7px #ff0080;
 
-.kitty1 {
-  height: 263.85px;
-  width: 220.14px;
-  margin-top: 15px;
 }
-.kitty1:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+/************** Craft Sections *************/
+.craftSection {
+  width: 100%;
+  /*background: url('../img/edit2.jpg');*/
+  border-top: 2px solid #abddff;
 }
-.kitty2 {
-  height: 266px;
-  width: 304.7px;
+a.crafts {
   margin-top: 10px;
-}
-.kitty2:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+  }
 
-.kitty3 {
-  height: 252.83px;
-  width: 200.16px;
-  margin-top: 10px;
-}
-.kitty3:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.kitty4 {
-  height: 274px;
-  width: 235.25px;
-  margin-top: 10px;
-}
-.kitty4:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-
-.kitty5 {
-  height: 253px;
-  width: 218px;
-  margin-top: 10px;
-}
-.kitty5:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.kitty6 {
-  height: 226.66px;
-  width: 183.83px;
-  margin-top: 10px;
-}
-.kitty6:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+a.crafts:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
 }
 
 /************** Footer Styles **************/
@@ -296,12 +313,12 @@ a.work:hover {
 }
 .footer {
   height: 30%;
-  background: url('../img/edit2.jpg');
+  background: url('../img/rainbowbackground.jpg');
   border-top: 2px solid #abddff;
 }
 .sectionA,
 .sectionF {
-  background-color: rgba(109,123,255, 0.5);
+  background-color: rgba(109,123,255, 0.7);
   border-radius: 3px;
   margin-bottom: 15px;
 }
@@ -400,16 +417,11 @@ label {
   font-size: 0;
   list-style: none;
   padding: 0;
+  width: 100%;
+  text-align: center;
 }
-
 .soc li {
   display: inline-block;
-  margin: 12px;
-  margin: 1.2rem;
-}
-ul.soc {
-  margin-left: 25px;
-  margin-right: auto;
 }
 
 .soc a, .soc svg {
@@ -418,8 +430,8 @@ ul.soc {
 
 .soc a {
   position: relative;
-  height: 6rem;
-  width: 6rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .soc svg {
@@ -429,7 +441,10 @@ ul.soc {
 
 .icon-13:hover,
 .icon-26:hover,
-.icon-17:hover {
+.icon-17:hover,
+.icon-20:hover,
+.icon-15:hover,
+.icon-10:hover {
   border-radius: 100%;
   color: rgba(109,123,255, 0.5);
   fill: rgba(109,123,255, 0.5);
@@ -468,34 +483,79 @@ ul.soc {
   background: #d926b5;
 }
 
+.icon-20 {
+  color: #26d991;
+  fill: #26d991;
+}
+.icon-20:hover {
+  background: #26d991;
+}
+
+.icon-10 {
+  color: #d926b5;
+  fill: #d926b5;
+}
+.icon-10:hover {
+  background: #d926b5;
+}
+.icon-15 {
+  color: #eec273;
+  fill: #eec273;
+}
+.icon-15:hover {
+  background: #eec273;
+}
+
 /****************** Modal Window *****************/
 .modal-header {
   border-bottom: 1px solid #ff3e96;
+}
+.listHead {
+  text-align: center;
+}
+.listHead:hover {
+  color: #ff3e96;
 }
 .modal-content {
   background-color: rgba(109,123,255, 0.9);
   overflow: hidden;
 }
 
-img.screenShot{
-  height: 368.42px;
-  width: 268px;
-}
-
-.projectInfo p {
-  text-align: center;
-}
-.projectInfo a {
-  text-align: center;
+.list {
+  text-align: left;
   color: #3effa7;
   font-size: 20px;
-  margin-left: 15px;
+  margin-left: 30px;
+  width: 100%;
+}
+.list2 {
+  text-align: left;
+  color: #3effa7;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.olList {
+  width: 100%;
 }
 
-.projectInfo a:hover {
-  background-color: transparent;
-  color: #ff3e96;
-  text-decoration: none;
+ol li {
+  position: relative;
+  font: italic 45px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+li p {
+  margin-top: 30px;
+  padding-left: 50px;
+  margin-right: 20px;
+  color: #3effa7;
+}
+
+span {
+  font: bold;
+  position: absolute;
+  margin-top: -8px;
 }
 
 .modal-footer {
@@ -523,7 +583,7 @@ img.screenShot{
   text-align: left;
   }
   .navbar-nav li a {
-    margin-left: 10px;
+    margin-left: -10px;
   }
   .alchemy {
     height: 40px;
@@ -534,44 +594,10 @@ img.screenShot{
   }
 
 /****** Portfolio Image Styles *******/
-  .kitty1 {
-    height: 230.87px;
-    width: 192.62px;
-    margin-top: 50px;
-  }
-  .kitty2 {
-    height: 239.4px;
-    width: 274.3px;
-    margin-top: 10px;
-  }
 
-  .kitty3 {
-    height: 216.71px;
-    width: 171.57px;
-    margin-top: 50px;
-  }
 
-  .kitty4 {
-    height: 235.25px;
-    width: 274px;
-    margin-top: 30px;
-  }
 
-  .kitty5 {
-    height: 289.14px;
-    width: 249.14px;
-    margin-right: 15px;
-  }
-
-  .kitty6 {
-    height: 226.66px;
-    width: 183.83px;
-    margin-top: 40px;
-  }
 /****** Footer *******/
-  .footer ul {
-  text-align: left;
-  }
 
   #footer {
   margin-left: 30px;
@@ -598,10 +624,14 @@ img.screenShot{
   .sectionA {
   width: 60%;
   margin-left: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   }
 
   .sectionF {
   margin-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 60%;
   }
 
@@ -624,26 +654,22 @@ img.screenShot{
   margin-right: 0px;
   }
   /** Social Media Icons **/
-  ul.soc {
-    margin-left: -20px;
-    margin-right: auto;
+  .soc {
     text-align: left;
+  }
+  .soc a {
+    width: 5rem;
+    height: 5rem;
+  }
+  .soc svg {
+    padding: 2px 2px;
   }
 /****************** Modal Window *****************/
   .mButton {
     margin-left: auto;
     margin-right: auto;
   }
-  img.screenShot{
-    height: 312.43px;
-    width: 269px;
-  }
-  .projectInfo a {
-    margin-left: 0px;
-  }
-  .projectInfo p {
-    text-align: left;
-  }
+
 }
 /*********************** Medium Screens ***********************/
 @media (min-width: 992px) {
@@ -720,22 +746,13 @@ img.screenShot{
     margin-top: 5px;
     margin-bottom: 0px;
   }
-  .footer ul {
+  /*.footer ul {
     text-align: center;
     padding-top: 10px;
-  }
+  }*/
 /****************** Modal Window *****************/
   .modal-dialog {
     width: 600px;
-  }
-
-  img.screenShot{
-    height: 308.42px;
-    width: 269px;
-  }
-
-  .projectInfo a {
-    margin-left: 0px;
   }
 }
 /*********************** Large Screens ***********************/
@@ -745,7 +762,7 @@ img.screenShot{
     height: 100%;
   }
   .navbar-nav li a {
-    margin-left: 150px;
+    margin-left: 100px;
   }
   .page-header {
     width: 33%;
@@ -814,17 +831,13 @@ img.screenShot{
     margin: 0;
     padding: 0;
   }
-  .soc li {
-    display: inline-block;
-    margin: 12px;
-    margin: 1.2rem;
+  .soc a {
+    width: 4rem;
+    height: 4rem;
   }
   /****** Modal Window *******/
   .modal-dialog {
     width: 900px;
-  }
-  .projectInfo a {
-    margin-left: 60px;
   }
 
 }
