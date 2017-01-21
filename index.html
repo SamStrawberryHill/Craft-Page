@@ -27,7 +27,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <div class="container">
             <ul class="nav navbar-nav">
-              <li><a href="#about"><strong>About</strong></a></li>
+              <li><a href="about"><strong>About</strong></a></li>
               <li><a href="#recipes"><strong>Recipes</strong></a></li>
               <li><a href="#crafts"><strong>Crafts</strong></a></li>
               <li><a href="#contact"><strong>Contact</strong></a></li>
@@ -39,9 +39,11 @@
     <!--************* Page Header/About me ************-->
     <div class="wrapper">
       <div class="section section-header aboutMe">
-          <img src="img/ScanMeeee2.png" height="472px" width="400px" alt="Self Portrait" class="portrait img-responsive center-block">
+          <a name="about">
+            <img src="img/ScanMeeee2.png" height="472px" width="400px" alt="Self Portrait" class="portrait img-responsive center-block">
+          </a>
           <div class="page-header text-center center-block">
-            <h2 class="samantha"><strong>Hi, I'm Samantha Hill. </strong><br />
+            <h2 class="samantha"><strong>Hi, I'm Samantha Hill.</strong><br />
               <small>I like making stuff.</small></h2>
           </div>
           <!--************* Alchemy Symbols ************-->
@@ -74,7 +76,7 @@
             </div>
           </div>
       </div>
-    <!--************* Portfolio ************-->
+    <!--************* Recipes ************-->
     <div class="container-fluid recipeSection">
       <div class="container text-center">
         <a class="recipes" name="recipes">Recipes</a>
@@ -83,16 +85,16 @@
       <div class="container">
         <div class="row">
           <div class="card firstCard">
-            <div class="col-lg-6 imageSection">
+            <div class="col-lg-6 col-sm-6 col-xs-6 imageSection">
                 <img src="img/aquavit.jpg" alt="Image of Aquavit" class="cardPhoto">
-                <img src="img/aquavit2.jpg" alt="Image of Aquavit" class="cardPhoto">
+                <img src="img/aquavit2.jpg" alt="Image of Aquavit" class="cardPhoto hidden-xs hidden-sm">
             </div>
-            <div class="col-lg-6 infoSection">
+            <div class="col-lg-6 col-sm-6 col-xs-6 infoSection">
               <h2 class="recipeTitle">Homemade Aquavit</h2>
               <p>Aquavit('water of life') is a flavoured spirit that is principally produced in Scandinavia,
                 where it has been produced since the 15th century and is believed to have healing powers.
                 Most people make their own aquavit so, I decided to give it a try!</p>
-              <button type="button" class="btn btn-lg" id="myBtn" data-toggle="modal" data-target="#myModal">Recipe</button>
+              <button type="button" class="btn btn-lg" id="myBtn" data-toggle="modal" data-target="#myModal" data-whatever="@mdo">Recipe</button>
             </div>
             <div class="modal fade" id="myModal" role="dialog">
               <div class="modal-dialog">
@@ -124,11 +126,11 @@
                             <h2 class="listHead">Instructions</h2>
                             <div class="olList">
                               <ol class="list2">
-                                <li><span>1.</span><p>With a mortar and pestle, lightly crush the coriander, fennel, caraway, and dill seed.</p></li>
-                                <li><span>2.</span><p>In a large, airtight glass container, combine the vodka with the crushed spices, peppercorns, dill and cloves. Strain the vodka into 4 clean 8-oz. glass bottles.</p></li>
-                                <li><span>3.</span><p>Cover and let stand at room temperature for 2 weeks, gently shaking the jar every 2 or 3 days.</p></li>
-                                <li><span>4.</span><p>Strain the vodka into a clean glass bottle.</p></li>
-                                <li><span>5.</span><p>Discard the spices.</p></li>
+                                <li><span class="li">1.</span><p>With a mortar and pestle, lightly crush the coriander, fennel, caraway, and dill seed.</p></li>
+                                <li><span class="li">2.</span><p>In a large, airtight glass container, combine the vodka with the crushed spices, peppercorns, dill and cloves. Strain the vodka into 4 clean 8-oz. glass bottles.</p></li>
+                                <li><span class="li">3.</span><p>Cover and let stand at room temperature for 2 weeks, gently shaking the jar every 2 or 3 days.</p></li>
+                                <li><span class="li">4.</span><p>Strain the vodka into a clean glass bottle.</p></li>
+                                <li><span class="li">5.</span><p>Discard the spices.</p></li>
                               </ol>
                             </div>
                           </div>
@@ -224,36 +226,86 @@
           </div>
           </div>
       </div>
-    <!-- Craft Section -->
+    <!---------- Craft Section ------->
     <div class="container-fluid craftSection">
       <div class="container text-center">
         <a class="crafts" name="crafts">Crafts</a>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="card firstCard">
-            <a data-toggle="modal" href="#myModal">
-              <img src="" alt="" class="">
-            </a>
-            <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">1</h4>
+    <!--**** Project 1 *****-->
+    <div class="container">
+      <div class="row">
+        <div class="card firstCard">
+          <div class="col-lg-6 col-sm-6 col-xs-6 imageSection">
+              <img src="img/rosemaryCandle.jpg" alt="Image of Aquavit" class="cardPhoto">
+              <img src="img/circleCandle.jpg" alt="Image of Aquavit" class="cardPhoto hidden-xs hidden-sm">
+          </div>
+          <div class="col-lg-6 col-sm-6 col-xs-6 infoSection">
+            <h2 class="recipeTitle">Homemade Candles</h2>
+            <p>The earliest surviving candles originated in Han China around 200 BC, and were made from whale fat.
+              Homemade candles are really fun and inexpensive to make. I used natural waxes because they do not
+              emitted toxic chemicals like toluene and benzene(paraffin waxes do).
+            </p>
+            <button type="button" class="btn btn-lg" id="myBtn" data-toggle="modal" data-target="#myModal2" data-whatever="@mdo">Recipe</button>
+          </div>
+          <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Homemade Candles</h1>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="ingredients">
+                          <h2 class="listHead">Ingredients</h2>
+                          <ul class="list">
+                            <li>1lb Beeswax or 1lb Soy Wax</li>
+                            <li>empty containers for wax, I used glass and ceramic</li>
+                            <li>chopsticks</li>
+                            <li>tape</li>
+                            <li>wicks</li>
+                            <li>glass container to melt the wax</li>
+                            <li>pot of boiling water</li>
+                            <p class="optional">Optional:</p>
+                            <li>essential oils</li>
+                            <li>herbs</li>
+                            <li>glitter</li>
+                            <li>rocks</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="instructions">
+                          <h2 class="listHead">Instructions</h2>
+                          <div class="olList">
+                            <ol class="list2">
+                              <li><span>1.</span><p>Adhere the wick to the bottom of the container with a drop of wax.</p></li>
+                              <li><span>2.</span><p>Put the wick between the chopsticks and tape the chopsticks together to keep it in place.
+                                Add any decorations you'd like to use. I put some sprigs of rosemary in mine.</p></li>
+                              <li><span>3.</span><p>Bring 2 inches of water to boil in a pot.</p></li>
+                              <li><span>4.</span><p>Place the wax in a glass container(measuring cup works well) then place the container in the pot of boiling water.</p></li>
+                              <li><span>5.</span><p>Pour the melted wax into your container. If using any scent or color, add it to the wax first.</p></li>
+                              <li><span>6.</span><p>Let the wax cool for at least 24 hours.</p></li>
+                              <li><span>7.</span><p>Cut the wick to the appropriate length.</p></li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-lg mButton" data-dismiss="modal">Close</button>
-                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-lg mButton" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
           <!--**** Project 2 *****-->
           <div class="container">
             <div class="row">
